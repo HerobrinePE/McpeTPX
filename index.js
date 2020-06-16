@@ -14,11 +14,7 @@ cli.on("ready", member =>{
 }, 10000)
 })
 cli.on("message", (args, message )=>{
-  if(message.content("-test")){
-  message.reply("Test was successful").then(m=>{
-    m.react("✅")
-  })
-}
+  if(message.content("-test")) return message.react("✅")
 })
 
 cli.login(key)
