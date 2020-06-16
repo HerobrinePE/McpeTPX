@@ -18,4 +18,4 @@ cli.on("message", (args, message )=>{
   })
 })
 
-cli.login(key)
+cli.login(process.env.TOKEN)
