@@ -1,6 +1,7 @@
 {
 
   "dependencies": {
+    "dotenv": "^8.2.0",
     "discord.js": "^12.2.0"
   },
   "engines": {
