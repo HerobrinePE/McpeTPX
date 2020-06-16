@@ -1,4 +1,4 @@
-require("./server.js")
+
 const {Client, MessageEmbed, Collection} = require("discord.js")
 let key = process.env.TOKEN
 const cli = new Client({
