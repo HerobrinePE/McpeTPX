@@ -2,7 +2,6 @@ const { Client , RichEmbed , Collection} = require("discord.js")
 const cli = new Client({
   disabledEveryone: true
 })
-console.log(cli.user.tag)
 cli.on("ready", async() =>{
   cli.user.setActivity("CODM", {type: "PLAYING"})
 })
@@ -12,6 +11,7 @@ cli.on('guildMemberAdd', member =>{
       var memberCountChannel = cli.channels.get("713778256708501524");
         memberCountChannel.setName("|>>|"+`${memberCount}`+"|<<|"+"SOILDERS");
    });
+console.log("online")
 
 cli.on('guildMemberRemove', member =>{
    const guild = cli.guilds.get("713234545788583967");
