@@ -2,6 +2,7 @@ const { Client , RichEmbed , Collection} = require("discord.js")
 const cli = new Client({
   disabledEveryone: true
 })
+console.log(cli.user.tag)
 cli.on("ready", async() =>{
   cli.user.setActivity("CODM", {type: "PLAYING"})
 })
